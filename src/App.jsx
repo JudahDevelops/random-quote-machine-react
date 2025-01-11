@@ -169,11 +169,13 @@ class Quoteblock extends React.Component {
     return (
       <section id="quote-section" style={{ backgroundColor: this.state.color }}>
         <div id="quote-box">
-          <div id="text" style={{ color:  this.state.color}}>
-            <h1>"<span>{this.state.quotes.quote}</span>"</h1>
-          </div>
-          <div id="author" style={{ color: this.state.color }}>
-            <h4>- {this.state.quotes.author}</h4>
+          <div id="quote-flex">
+            <div id="text" style={{ color:  this.state.color}}>
+              <h1>"<span>{this.state.quotes.quote}</span>"</h1>
+            </div>
+            <div id="author" style={{ color: this.state.color }}>
+              <h4>- {this.state.quotes.author}</h4>
+            </div>
           </div>
           <div className="controls">
             <button id="new-quote" onClick={randomSht}  style={{ backgroundColor: this.state.color }}>New Quote</button>
